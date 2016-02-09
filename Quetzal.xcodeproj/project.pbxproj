@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A45D6E311C4C9C7500A12BD5 /* ObjFW.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A45D6E2F1C4C9C6F00A12BD5 /* ObjFW.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A45D6E321C4C9E3B00A12BD5 /* ObjFW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45D6E2F1C4C9C6F00A12BD5 /* ObjFW.framework */; };
+		A45D6E361C4CA2F800A12BD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A45D6E351C4CA2F800A12BD5 /* AppDelegate.m */; };
+		A45D6E3C1C4CA34100A12BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45D6E391C4CA34100A12BD5 /* Assets.xcassets */; };
+		A45D6E411C4CA56C00A12BD5 /* QZDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = A45D6E401C4CA56C00A12BD5 /* QZDirector.m */; };
+		A45D6E461C4CA87C00A12BD5 /* QZRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45D6E451C4CA87C00A12BD5 /* QZRenderer.m */; };
+		A45D6E4A1C4CAE1000A12BD5 /* QZTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = A45D6E491C4CAE1000A12BD5 /* QZTypes.m */; };
+		A45D6E4C1C4CB33000A12BD5 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45D6E4B1C4CB33000A12BD5 /* OpenGL.framework */; };
+		A4AC9AA51C67BC980011A723 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4AC9AA41C67BC980011A723 /* Cocoa.framework */; };
+		A4AC9AAD1C6871AE0011A723 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4AC9AAC1C6871AE0011A723 /* Foundation.framework */; };
+		A4AC9AB01C6874C00011A723 /* ObjFW-Bridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4AC9AAF1C6874C00011A723 /* ObjFW-Bridge.framework */; };
+		A4AC9AB11C6874CD0011A723 /* ObjFW-Bridge.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4AC9AAF1C6874C00011A723 /* ObjFW-Bridge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4AC9AB31C6882300011A723 /* MacView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AC9AB21C6882300011A723 /* MacView.xib */; };
+		A4AC9AB61C68844D0011A723 /* QZMacRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AC9AB51C68844D0011A723 /* QZMacRenderer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A45D6E271C4C9AB200A12BD5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A4AC9AB11C6874CD0011A723 /* ObjFW-Bridge.framework in CopyFiles */,
+				A45D6E311C4C9C7500A12BD5 /* ObjFW.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A45D6E101C4C99B500A12BD5 /* Quetzal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quetzal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45D6E2F1C4C9C6F00A12BD5 /* ObjFW.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjFW.framework; sourceTree = "<group>"; };
+		A45D6E341C4CA2F800A12BD5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A45D6E351C4CA2F800A12BD5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A45D6E391C4CA34100A12BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A45D6E3B1C4CA34100A12BD5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A45D6E401C4CA56C00A12BD5 /* QZDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZDirector.m; sourceTree = "<group>"; };
+		A45D6E421C4CA57900A12BD5 /* QZDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZDirector.h; sourceTree = "<group>"; };
+		A45D6E431C4CA61300A12BD5 /* QuetzalIncludes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuetzalIncludes.h; sourceTree = "<group>"; };
+		A45D6E441C4CA87C00A12BD5 /* QZRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QZRenderer.h; path = ../System/QZRenderer.h; sourceTree = "<group>"; };
+		A45D6E451C4CA87C00A12BD5 /* QZRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QZRenderer.m; path = ../System/QZRenderer.m; sourceTree = "<group>"; };
+		A45D6E481C4CAA8100A12BD5 /* QZTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTypes.h; sourceTree = "<group>"; };
+		A45D6E491C4CAE1000A12BD5 /* QZTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTypes.m; sourceTree = "<group>"; };
+		A45D6E4B1C4CB33000A12BD5 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		A4AC9AA41C67BC980011A723 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A4AC9AAC1C6871AE0011A723 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4AC9AAF1C6874C00011A723 /* ObjFW-Bridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ObjFW-Bridge.framework"; sourceTree = "<group>"; };
+		A4AC9AB21C6882300011A723 /* MacView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MacView.xib; sourceTree = "<group>"; };
+		A4AC9AB41C68844D0011A723 /* QZMacRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZMacRenderer.h; sourceTree = "<group>"; };
+		A4AC9AB51C68844D0011A723 /* QZMacRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZMacRenderer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A45D6E0D1C4C99B500A12BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AC9AAD1C6871AE0011A723 /* Foundation.framework in Frameworks */,
+				A4AC9AA51C67BC980011A723 /* Cocoa.framework in Frameworks */,
+				A4AC9AB01C6874C00011A723 /* ObjFW-Bridge.framework in Frameworks */,
+				A45D6E4C1C4CB33000A12BD5 /* OpenGL.framework in Frameworks */,
+				A45D6E321C4C9E3B00A12BD5 /* ObjFW.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A45D6E071C4C99B500A12BD5 = {
+			isa = PBXGroup;
+			children = (
+				A45D6E121C4C99B500A12BD5 /* Quetzal */,
+				A45D6E111C4C99B500A12BD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A45D6E111C4C99B500A12BD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A45D6E101C4C99B500A12BD5 /* Quetzal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A45D6E121C4C99B500A12BD5 /* Quetzal */ = {
+			isa = PBXGroup;
+			children = (
+				A45D6E3F1C4CA52200A12BD5 /* Classes */,
+				A45D6E331C4CA28400A12BD5 /* System */,
+				A45D6E261C4C9A4100A12BD5 /* Frameworks */,
+			);
+			path = Quetzal;
+			sourceTree = "<group>";
+		};
+		A45D6E261C4C9A4100A12BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4AC9AAF1C6874C00011A723 /* ObjFW-Bridge.framework */,
+				A4AC9AAC1C6871AE0011A723 /* Foundation.framework */,
+				A4AC9AA41C67BC980011A723 /* Cocoa.framework */,
+				A45D6E4B1C4CB33000A12BD5 /* OpenGL.framework */,
+				A45D6E2F1C4C9C6F00A12BD5 /* ObjFW.framework */,
+			);
+			name = Frameworks;
+			path = System/MacOS/Frameworks;
+			sourceTree = "<group>";
+		};
+		A45D6E331C4CA28400A12BD5 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				A45D6E371C4CA30500A12BD5 /* MacOS */,
+				A45D6E341C4CA2F800A12BD5 /* AppDelegate.h */,
+				A45D6E351C4CA2F800A12BD5 /* AppDelegate.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		A45D6E371C4CA30500A12BD5 /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				A45D6E381C4CA30C00A12BD5 /* Resources */,
+				A4AC9AB41C68844D0011A723 /* QZMacRenderer.h */,
+				A4AC9AB51C68844D0011A723 /* QZMacRenderer.m */,
+			);
+			path = MacOS;
+			sourceTree = "<group>";
+		};
+		A45D6E381C4CA30C00A12BD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A45D6E391C4CA34100A12BD5 /* Assets.xcassets */,
+				A45D6E3B1C4CA34100A12BD5 /* Info.plist */,
+				A4AC9AB21C6882300011A723 /* MacView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A45D6E3F1C4CA52200A12BD5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A45D6E471C4CAA0D00A12BD5 /* Types */,
+				A45D6E421C4CA57900A12BD5 /* QZDirector.h */,
+				A45D6E401C4CA56C00A12BD5 /* QZDirector.m */,
+				A45D6E441C4CA87C00A12BD5 /* QZRenderer.h */,
+				A45D6E451C4CA87C00A12BD5 /* QZRenderer.m */,
+				A45D6E431C4CA61300A12BD5 /* QuetzalIncludes.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A45D6E471C4CAA0D00A12BD5 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				A45D6E481C4CAA8100A12BD5 /* QZTypes.h */,
+				A45D6E491C4CAE1000A12BD5 /* QZTypes.m */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A45D6E0F1C4C99B500A12BD5 /* Quetzal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A45D6E211C4C99B500A12BD5 /* Build configuration list for PBXNativeTarget "Quetzal" */;
+			buildPhases = (
+				A45D6E0C1C4C99B500A12BD5 /* Sources */,
+				A45D6E0D1C4C99B500A12BD5 /* Frameworks */,
+				A45D6E0E1C4C99B500A12BD5 /* Resources */,
+				A45D6E271C4C9AB200A12BD5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quetzal;
+			productName = Quetzal;
+			productReference = A45D6E101C4C99B500A12BD5 /* Quetzal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A45D6E081C4C99B500A12BD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Vetra Games";
+				TargetAttributes = {
+					A45D6E0F1C4C99B500A12BD5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = A45D6E0B1C4C99B500A12BD5 /* Build configuration list for PBXProject "Quetzal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A45D6E071C4C99B500A12BD5;
+			productRefGroup = A45D6E111C4C99B500A12BD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A45D6E0F1C4C99B500A12BD5 /* Quetzal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A45D6E0E1C4C99B500A12BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AC9AB31C6882300011A723 /* MacView.xib in Resources */,
+				A45D6E3C1C4CA34100A12BD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A45D6E0C1C4C99B500A12BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A45D6E4A1C4CAE1000A12BD5 /* QZTypes.m in Sources */,
+				A4AC9AB61C68844D0011A723 /* QZMacRenderer.m in Sources */,
+				A45D6E461C4CA87C00A12BD5 /* QZRenderer.m in Sources */,
+				A45D6E411C4CA56C00A12BD5 /* QZDirector.m in Sources */,
+				A45D6E361C4CA2F800A12BD5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A45D6E1F1C4C99B500A12BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A45D6E201C4C99B500A12BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A45D6E221C4C99B500A12BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)/Quetzal/System/MacOS/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				INFOPLIST_FILE = "$(SRCROOT)/Quetzal/System/MacOS/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quetzal/System/MacOS",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-fconstant-string-class=OFConstantString",
+					"-fno-constant-cfstrings",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vetragames.Quetzal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A45D6E231C4C99B500A12BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)/Quetzal/System/MacOS/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				INFOPLIST_FILE = "$(SRCROOT)/Quetzal/System/MacOS/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Quetzal/System/MacOS",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-fconstant-string-class=OFConstantString",
+					"-fno-constant-cfstrings",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vetragames.Quetzal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A45D6E0B1C4C99B500A12BD5 /* Build configuration list for PBXProject "Quetzal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A45D6E1F1C4C99B500A12BD5 /* Debug */,
+				A45D6E201C4C99B500A12BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A45D6E211C4C99B500A12BD5 /* Build configuration list for PBXNativeTarget "Quetzal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A45D6E221C4C99B500A12BD5 /* Debug */,
+				A45D6E231C4C99B500A12BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A45D6E081C4C99B500A12BD5 /* Project object */;
+}
